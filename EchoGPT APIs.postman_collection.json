@@ -1,0 +1,343 @@
+{
+  "info": {
+    "_postman_id": "a49838e5-e74b-4103-8541-aee63b29ec45",
+    "name": "EchoGPT APIs",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54894632",
+    "_collection_link": "https://go.postman.co/collection/54894632-a49838e5-e74b-4103-8541-aee63b29ec45?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Send Prompt-Verify Response",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"messageId\": \"5e90c566-3e54-4a15-a5fa-b6a0d71c1f67\",\r\n  \"message\": \"what is AI\",\r\n  \"model\": \"echogpt\",\r\n  \"steam\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.echogpt.live/v1/chat/generate",
+          "protocol": "https",
+          "host": [
+            "api",
+            "echogpt",
+            "live"
+          ],
+          "path": [
+            "v1",
+            "chat",
+            "generate"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Send Prompt-Verify Response",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"messageId\": \"5e90c566-3e54-4a15-a5fa-b6a0d71c1f67\",\r\n  \"message\": \"what is AI\",\r\n  \"model\": \"echogpt\",\r\n  \"steam\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api.echogpt.live/v1/chat/generate",
+              "protocol": "https",
+              "host": [
+                "api",
+                "echogpt",
+                "live"
+              ],
+              "path": [
+                "v1",
+                "chat",
+                "generate"
+              ]
+            }
+          },
+          "status": "Unauthorized",
+          "code": 401,
+          "_postman_previewlanguage": "json",
+          "header": [
+            {
+              "key": "x-powered-by",
+              "value": "Express"
+            },
+            {
+              "key": "access-control-allow-origin",
+              "value": "*"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "content-length",
+              "value": "43"
+            },
+            {
+              "key": "etag",
+              "value": "W/\"2b-dGnJzt6gv1nJjX6DJ9RztDWptng\""
+            },
+            {
+              "key": "date",
+              "value": "Fri, 25 Sep 2026 12:42:32 GMT"
+            },
+            {
+              "key": "via",
+              "value": "1.1 google"
+            },
+            {
+              "key": "alt-svc",
+              "value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n  \"message\": \"Unauthorized\",\n  \"statusCode\": 401\n}"
+        }
+      ]
+    },
+    {
+      "name": "Change AI Model-Verify Response",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.echogpt.live/v1/chat/response/df8b0f38-1a8a-4026-93ee-ca755534a017",
+          "protocol": "https",
+          "host": [
+            "api",
+            "echogpt",
+            "live"
+          ],
+          "path": [
+            "v1",
+            "chat",
+            "response",
+            "df8b0f38-1a8a-4026-93ee-ca755534a017"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Log Out- Verify logout",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "https://www.google-analytics.com/g/collect?v=2&tid=G-Z6FRNCMBFJ&gtm=45je69n1v9196090770za20gzb9204609546zd9204609546xf1&_p=1790289118040&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AEAAAAQ&ae=a&cid=1137849692.1790152527&frm=0&ngs=1&pscdl=noapi&rcb=13&sr=1366x768&uaa=x86&uab=64&uafvl=Google%2520Chrome%3B153.0.8010.53%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.53&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=1&ul=en-us&_s=4&tag_exp=115938465~115938468~118897920~118897930~120213116~120385422~120469145~120469153&dl=https%3A%2F%2Fechogpt.live%2Flogin&dr=https%3A%2F%2Fechogpt.live%2F%3Fid%3D42b4d836-b0df-4f25-a5a0-86cfdad838e0%26model%3Dmeituan%2FLongCat-2.0%3Afree&sid=1790288192&sct=9&seg=1&dt=EchoGPT%20-%20AI-Driven%20Productivity%20Solutions&en=page_view&_et=3309&tfd=278484",
+          "protocol": "https",
+          "host": [
+            "www",
+            "google-analytics",
+            "com"
+          ],
+          "path": [
+            "g",
+            "collect"
+          ],
+          "query": [
+            {
+              "key": "v",
+              "value": "2"
+            },
+            {
+              "key": "tid",
+              "value": "G-Z6FRNCMBFJ"
+            },
+            {
+              "key": "gtm",
+              "value": "45je69n1v9196090770za20gzb9204609546zd9204609546xf1"
+            },
+            {
+              "key": "_p",
+              "value": "1790289118040"
+            },
+            {
+              "key": "gcd",
+              "value": "13l3l3l3l1l1"
+            },
+            {
+              "key": "npa",
+              "value": "0"
+            },
+            {
+              "key": "dma",
+              "value": "0"
+            },
+            {
+              "key": "_eu",
+              "value": "AEAAAAQ"
+            },
+            {
+              "key": "ae",
+              "value": "a"
+            },
+            {
+              "key": "cid",
+              "value": "1137849692.1790152527"
+            },
+            {
+              "key": "frm",
+              "value": "0"
+            },
+            {
+              "key": "ngs",
+              "value": "1"
+            },
+            {
+              "key": "pscdl",
+              "value": "noapi"
+            },
+            {
+              "key": "rcb",
+              "value": "13"
+            },
+            {
+              "key": "sr",
+              "value": "1366x768"
+            },
+            {
+              "key": "uaa",
+              "value": "x86"
+            },
+            {
+              "key": "uab",
+              "value": "64"
+            },
+            {
+              "key": "uafvl",
+              "value": "Google%2520Chrome%3B153.0.8010.53%7CNot_A%2520Brand%3B8.0.0.0%7CChromium%3B153.0.8010.53"
+            },
+            {
+              "key": "uam",
+              "value": ""
+            },
+            {
+              "key": "uamb",
+              "value": "0"
+            },
+            {
+              "key": "uap",
+              "value": "Windows"
+            },
+            {
+              "key": "uapv",
+              "value": "19.0.0"
+            },
+            {
+              "key": "uaw",
+              "value": "1"
+            },
+            {
+              "key": "ul",
+              "value": "en-us"
+            },
+            {
+              "key": "_s",
+              "value": "4"
+            },
+            {
+              "key": "tag_exp",
+              "value": "115938465~115938468~118897920~118897930~120213116~120385422~120469145~120469153"
+            },
+            {
+              "key": "dl",
+              "value": "https%3A%2F%2Fechogpt.live%2Flogin"
+            },
+            {
+              "key": "dr",
+              "value": "https%3A%2F%2Fechogpt.live%2F%3Fid%3D42b4d836-b0df-4f25-a5a0-86cfdad838e0%26model%3Dmeituan%2FLongCat-2.0%3Afree"
+            },
+            {
+              "key": "sid",
+              "value": "1790288192"
+            },
+            {
+              "key": "sct",
+              "value": "9"
+            },
+            {
+              "key": "seg",
+              "value": "1"
+            },
+            {
+              "key": "dt",
+              "value": "EchoGPT%20-%20AI-Driven%20Productivity%20Solutions"
+            },
+            {
+              "key": "en",
+              "value": "page_view"
+            },
+            {
+              "key": "_et",
+              "value": "3309"
+            },
+            {
+              "key": "tfd",
+              "value": "278484"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Login with Gmail-Verify API response",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://lh3.googleusercontent.com/a/ACg8ocIlYn1q3oe_HDPEiqcbG3Zy5pxh_cx-FTzJajUfCOtf8BnA1g=s96-c",
+          "protocol": "https",
+          "host": [
+            "lh3",
+            "googleusercontent",
+            "com"
+          ],
+          "path": [
+            "a",
+            "ACg8ocIlYn1q3oe_HDPEiqcbG3Zy5pxh_cx-FTzJajUfCOtf8BnA1g=s96-c"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
